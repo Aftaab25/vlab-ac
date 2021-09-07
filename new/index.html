@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Operations using Op-Amp</title>
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="JS/functions.js"></script>
+</head>
+<body>
+    <div id="head">
+        <p style="text-align: center; font-weight: bold;font-size: 28px; padding-bottom: 20px;">Mathematical Operations using Op-Amp</p>
+        <button style="background-color:forestgreen; padding:10px; text-align: center; font-weight: bold; color: aliceblue" onclick="popup()">Procedure</button>
+        <button style="background-color:forestgreen; padding:10px; text-align: center; font-weight: bold; color: aliceblue;visibility: hidden;" id="obsButton" onclick="toggle_popup_observation()">Observation Table</button>
+
+
+        <div id="draggable">
+            <span id='close' onclick="hide()" style="cursor:default">x</span></a>
+            <div id="content-head">Procedure</div>
+            <div id="content">
+                <ol>
+                    <li>Enter the input values for different input resistances:<br>R1, R2, R3</li>
+
+                    <li>Click on the "check" button to check if the connections are right.</li>
+
+                    <li>Once you make sure that the connections are right, you may vary the input resistance and the feedback resistance to compute the final output.</li>
+
+                    <li>Click on "Add" button to add the readings to the table.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="obsertable" style="visibility: hidden;">
+            <table id="obsTable">
+                <caption class="sticky">Observation Table</caption>
+
+                <tr name="head">
+                    <th>Sr No.</th>
+                    <th>
+                        Input Voltage(V <sub>in</sub>)
+                    </th>
+                    <th>Reference Voltage
+                        (V<sub>ref</sub>)</th>
+                    <th> Output Voltage (V<sub>out</sub>)</th>
+                </tr>
+
+            </table>
+        </div>
+
+
+        <div id="simulator">
+            <img src="Images/ckt.jpg" style="height:400px; width: 540px;" />
+
+            <button id="check-button" style="padding: 4px; margin-left:120px;font-size: 16px;margin-top:10px;margin-right: 20px;" onclick="check()">Check</button>
+            <button id="reset" style="padding: 4px;padding-right: 12px;padding-left: 12px;font-size: 16px;margin-top:10px;margin-right: 20px;" onclick="deleteconnection()">Reset</button>
+
+
+            <!--------- Circuit Design Ends ----------------------------------------->
+
+
+            <!--------- User Input Begins --------------------------------------------------->
+
+                        
+            <div id="txt">Resistance (R1) : </div>
+            <div class="r1">
+                <input type="range" min="0" max="1000" value="500" class="slider" id="resistance1" onmousemove="res1(this.value)" disabled=true>
+                <div id="txt1">500 &#8486</div>
+            </div>
+
+            <div id="txt-2">Resistance (R2) : </div>
+            <div class="r1">
+                <input type="range" min="0" max="1000" value="500" class="slider-2" id="resistance2" onmousemove="res2(this.value)" disabled=true>
+                <div id="txt1-2">500 &#8486</div>
+            </div>
+
+            <div id="txt-3">Resistance (Rf) : </div>
+            <div class="r1">
+                <input type="range" min="0" max="1000" value="500" class="slider-3" id="resistance3" onmousemove="res3(this.value)" disabled=true>
+                <div id="txt1-3">500 &#8486</div>
+            </div>
+
+            <!-- <div id="txt2">Non-inverting Voltage (V<sub>1</sub>) : 4.5V </div> -->
+            <!-- <div id="txt3">Inverting Voltage (V<sub>2</sub>) : <span id="ans" style="font-weight:bold"></span> </div> -->
+            <button id="add" onclick="add()" disabled=true>Add</button>
+            <button id="output" onclick="solve()" disabled=true>Output</button>
+            <div id="txt3">Input Voltage (V<sub>1</sub>) : 1 V, Input Voltage (V<sub>2</sub>) : 2 V </div>
+            <div id="txt4">Output Voltage (V<sub>out</sub>) : <span id="ans" style="font-weight:bold"></span> </div>
+            <div id="txt5">Type of the Circuit : <span id="type" style="font-weight:bold"></span> </div>
+
+            <!--------- User Input Ends --------------------------------------------------->
+        </div>
+
+
+
+    </div>
+</body>
+</html>
