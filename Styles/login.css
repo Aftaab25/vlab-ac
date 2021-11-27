@@ -1,0 +1,87 @@
+/* html {
+  background-image: url("https://images.unsplash.com/photo-1541323429887-2e393b8db71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.info {
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 100px;
+}
+
+.info-center {
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.aim {
+  padding-left: 10px;
+  padding-right: 150px;
+}
+
+.theory {
+  padding-left: 10px;
+  padding-right: 150px;
+}
+
+.prelab {
+  padding-left: 10px;
+  padding-right: 150px;
+}
+
+.perform-btn {
+  padding-left: 10px;
+}
+
+.procedure {
+  padding-left: 10px;
+}
+
+.center {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.figure {
+  padding-left: 50px;
+}
+
+.inp1 {
+  padding: 5px;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.inp2 {
+  padding: 5px;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.ckt-type {
+  padding: 5px;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.obs-table {
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+.conclusion {
+  padding-left: 10px;
+  padding-right: 150px;
+}
