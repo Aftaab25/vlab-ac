@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="Style/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="Styles/postlab.css" />
+    <script src="JS/postlab.js"></script>
+    <!-- <script src="JS/plot.js"></script> -->
+
+    <title>PostLab</title>
+  </head>
+  <body
+    style="
+      background-image: url('../Images/background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
+  >
+    <!-- navbar starts-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">VLAB</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i>Sections</i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="theory.html">Aim and Theory</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="experiment.html">Experiment</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="postlab.html"
+                    >PostLab Exercise</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="conclusion.html"> Conclusion </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar ends -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <div class="center">
+      <p>
+        <a class="btn btn-lg btn-outline-dark"> PostLab Quiz and Exercise </a>
+      </p>
+    </div>
+
+    <div class="info-center border border-dark border-1 rounded-3">
+      <p>
+        <a class="btn btn-lg btn-outline-dark"> Quiz </a>
+      </p>
+      <hr />
+    <div class="questions">
+      <div class="q1">
+      <!-- ans: 2 -->
+      <p>
+        1. Transmitting antenna has which of the following parameter as a basic requirement.
+      </p>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+        <label class="form-check-label" for="exampleRadios1">
+          Side lobes are low
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Efficiency is high
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+        <label class="form-check-label" for="exampleRadios3">
+          High SNR value
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+        <label class="form-check-label" for="exampleRadios4">
+          Low SNR value
+        </label>
+      </div>
+      <div class="ans mt-2">
+        <p>
+          <a class="btn btn-sm btn-dark" data-bs-toggle="collapse" href="#ans1" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Answer
+          </a>
+        </p>
+        <div class="collapse" id="ans1">
+          <div class="card card-body">
+            2. Efficiency is High
+          </div>
+        </div>
+      </div>
+      </div>
+      <hr>
+
+      <br>
+
+      <div class="q2">
+        <!-- ans: 1 -->
+        <p>
+          2. At what condition does wave radiates?
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+          <label class="form-check-label" for="exampleRadios1">
+            When the TEM wave between transmitting and receiving antenna approaches lambda
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            When the TEM wave between transmitting and receiving antenna exceeds lambda
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+          <label class="form-check-label" for="exampleRadios3">
+            None of the above
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+          <label class="form-check-label" for="exampleRadios4">
+            When the TEM wave between transmitting and receiving antenna is lesser than lambda
+          </label>
+        </div>
+        <div class="ans mt-2">
+          <p>
+            <a class="btn btn-sm btn-dark" data-bs-toggle="collapse" href="#ans2" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Answer
+            </a>
+          </p>
+          <div class="collapse" id="ans2">
+            <div class="card card-body">
+              1. When the TEM wave between transmitting and receiving antenna approaches lambda
+            </div>
+          </div>
+        </div>
+      </div>
+        <hr>
+        <br>
+
+        <div class="q3">
+          <!-- ans: 2 -->
+          <p>
+            3. The characteristics of an antenna's radiation pattern can be represented in ________ number of ways.
+          </p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">
+              2
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              3
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3">
+              4
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+            <label class="form-check-label" for="exampleRadios4">
+              5
+            </label>
+          </div>
+          <div class="ans mt-2">
+            <p>
+              <a class="btn btn-sm btn-dark" data-bs-toggle="collapse" href="#ans3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Answer
+              </a>
+            </p>
+            <div class="collapse" id="ans3">
+              <div class="card card-body">
+                2. 3
+              </div>
+            </div>
+          </div>
+          </div>
+          <hr>
+          
+          <br>
+
+          <div class="q4">
+            <!-- ans: 3 -->
+            <p>
+              4. Radiation patterns can be represented in terms of _______ types.
+            </p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <label class="form-check-label" for="exampleRadios1">
+                Field Patterns
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Power Patterns
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <label class="form-check-label" for="exampleRadios3">
+                Both a and b
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+              <label class="form-check-label" for="exampleRadios4">
+                Direection Patterns
+              </label>
+            </div>
+            <div class="ans mt-2">
+              <p>
+                <a class="btn btn-sm btn-dark" data-bs-toggle="collapse" href="#ans4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Answer
+                </a>
+              </p>
+              <div class="collapse" id="ans4">
+                <div class="card card-body">
+                  3. Both a and b
+                </div>
+              </div>
+            </div>
+            </div>
+            <hr>
+
+            <br>
+          
+            <div class="q5">
+              <!-- ans: 1 -->
+              <p>
+                5. An electromagnetic wave has how many fields _______.
+              </p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                <label class="form-check-label" for="exampleRadios1">
+                  2
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  3
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                <label class="form-check-label" for="exampleRadios3">
+                  4
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                <label class="form-check-label" for="exampleRadios4">
+                  5
+                </label>
+              </div>
+              <div class="ans mt-2">
+                <p>
+                  <a class="btn btn-sm btn-dark" data-bs-toggle="collapse" href="#ans5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Answer
+                  </a>
+                </p>
+                <div class="collapse" id="ans5">
+                  <div class="card card-body">
+                    1. 2
+                  </div>
+                </div>
+              </div>
+              </div>
+              <hr>
+              <br>
+
+              <div class="q6">
+                <!-- ans: 4 -->
+                <p>
+                  6. Electric field in EM wave is plotted on ______ axis.
+                </p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                  <label class="form-check-label" for="exampleRadios1">
+                    Either a or b
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Y-axis
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                  <label class="form-check-label" for="exampleRadios3">
+                    Z-axis
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                  <label class="form-check-label" for="exampleRadios4">
+                    X-axis
+                  </label>
+                </div>
+                <div class="ans mt-2">
+                  <p>
+                    <a class="btn btn-sm btn-dark" data-bs-toggle="collapse" href="#ans6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Answer
+                    </a>
+                  </p>
+                  <div class="collapse" id="ans6">
+                    <div class="card card-body">
+                      4. X-axis
+                    </div>
+                  </div>
+                </div>
+                </div>
+              <hr>
+              <br>
+
+    </div>
+
+    </div>
+
+    <div>
+      <p>
+        <span style="float: left; margin-left: 50px"
+          ><a class="btn btn-sm btn-outline-dark" href="experiment.html"
+            ><strong> Back </strong></a
+          ></span
+        >
+        <span style="float: right; margin-right: 50px"
+          ><a class="btn btn-sm btn-outline-dark" href="conclusion.html"
+            ><strong> Next </strong></a
+          ></span
+        >
+      </p>
+    </div>
+
+    <br /><br />
+
+    <!-- Observation Table ends -->
+  </body>
+</html>
