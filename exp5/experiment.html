@@ -33,7 +33,7 @@
     />
     <!-- <link rel="stylesheet" type="text/css" href="Style/style.css"> -->
     <link rel="stylesheet" type="text/css" href="../Styles/exp.css" />
-    <!-- <script src="JS/functions.js"></script> -->
+    <script src="../JS/test.js"></script>
 
     <title>Experiment</title>
   </head>
@@ -125,14 +125,60 @@
     ></script>
 
     <div>
-      <img src="../Images/conndot.png" id="r1" class="control" id = "" alt=""
-      style="position: absolute; height: 2px; width:2px; margin-left: 389px; margin-top: 596px;">
+      <img src="../Images/conndot.png" id="vdc_dwn" class="control" id = "" alt=""
+      style="position: absolute; height: 2px; width:2px; margin-left: 508px; margin-top: 577px;">
 
-      <img src="../Images/conndot.png" id="r2" class="control" id = "" alt=""
-      style=" position: absolute; height: 2px; width:2px; margin-left: 389px; margin-top: 650px;">
+      <img src="../Images/conndot.png" id="vdc_up" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 508px; margin-top: 520px;">
 
-      <img src="../Images/conndot.png" id="rf" class="control" id = "" alt=""
-      style=" position: absolute; height: 2px; width:2px; margin-left: 420px; margin-top: 511px;">
+      <img src="../Images/conndot.png" id="b_up" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 646px; margin-top: 478px;">
+
+      <img src="../Images/conndot.png" id="b_dwn" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 645px; margin-top: 620px;">
+
+      <img src="../Images/conndot.png" id="b_left" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 575px; margin-top: 546px;">
+
+      <img src="../Images/conndot.png" id="b_right" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 715px; margin-top: 546px;">
+
+      <img src="../Images/conndot.png" id="a1_up" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 768px; margin-top: 517px;">
+
+      <img src="../Images/conndot.png" id="a1_dwn" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 768px; margin-top: 576px;">
+
+      <img src="../Images/conndot.png" id="a1_fwd" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 870px; margin-top: 546px;">
+
+      <img src="../Images/conndot.png" id="a2_up" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 768px; margin-top: 767px;">
+
+      <img src="../Images/conndot.png" id="a2_dwn" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 768px; margin-top: 826px;">
+
+      <img src="../Images/conndot.png" id="a2_fwd" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 870px; margin-top: 796px;">
+
+      <img src="../Images/conndot.png" id="r1_in" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 925px; margin-top: 534px;">
+
+      <img src="../Images/conndot.png" id="r1_out" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 1000px; margin-top: 534px;">
+
+      <img src="../Images/conndot.png" id="rf_in" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 1072px; margin-top: 532px;">
+
+      <img src="../Images/conndot.png" id="r2_in" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 925px; margin-top: 796px;">
+
+      <img src="../Images/conndot.png" id="r2_out" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 1063px; margin-top: 796px;">
+
+      <img src="../Images/conndot.png" id="a3_dwn" class="control" id = "" alt=""
+      style=" position: absolute; height: 2px; width:2px; margin-left: 1085px; margin-top: 650px;">
+
 
   </div>
 
@@ -152,14 +198,15 @@
       <div id="steps">
         <ol>
           <li>
-            Enter the input values for different input resistances:<br>R1, R2, Rf.
+            Connect the different components of the given Instrumentation Amplifier Circuit.
           </li>
 
           <li>
-            Click on the "Done" button to calculate the output voltage and check the type of circuit formed.
+            After connecting the different components, check whether the connections are correct or not.
           </li>
           
-            <li>Once that is done, the values will be directly inserted in the Observation Table.</li>
+            <li>If the connections are correct, proceed to the slider and vary the value of temperature to change the value of resistance in the thermistor.</li>
+            <li>After changing the values, click on the "add" button. This will add the value to the Observation Table.</li>
             <li>Repeat the experiment 5 times to fill the table completely.</li>
 
         </ol>
@@ -168,27 +215,30 @@
 
     <div class="d-flex justify-content-evenly my-3">
       <div class="figure">
-        <img src="../Images/ckt.jpg" style="height:325px; width: 440px;" />
+        <img src="../Images/Instrumentation_amp.drawio.png" />
       </div>
-  
+</div>
+      <div class="d-flex justify-content-evenly my-5">
       <div class="sliders">
-
-        <div class="btn btn-outline-primary btn-sm">
-          <label for="customRange3" class="form-label">Resistance (R1) : </label>
-          <input type="range" class="form-range" min="0" max="1000" value="500"  id="customRange3" onmousemove="res1(this.value)">
-          <div id="txt1">500 &#8486</div>
+        <div class="d-flex justify-content-evenly">
+          <p>
+            <a class="btn btn-outline-success" onclick="check()">
+                Check Circuit Connections
+            </a>
+          </p>
         </div>
-
-        <div class="btn btn-outline-primary btn-sm">
-          <label for="customRange3" class="form-label">Resistance (R2) : </label>
-          <input type="range" class="form-range" min="0" max="1000" value="500"  id="customRange3" onmousemove="res2(this.value)">
-          <div id="txt1-2">500 &#8486</div>
+        <div class="d-flex flex-column my-2">
+          <div class="inp1 my-2" id="txt1">R<sub>1</sub> = 1 k&Omega;, R<sub>F</sub> : 4.7k&Omega;, R<sub>A</sub> = R<sub>B</sub> = R<sub>C</sub> = 100k&Omega;, R<sub>T</sub> = 100k&Omega; at 25&deg;C</div>
+          <div class="inp1 my-2" id="txt2">V<sub>1</sub> = +5V, Op-amp supply Voltages = +15/-15V</div>
+          <div class="inp1 my-2" id="txt3">Temperature Corfficient of Resistance = -1k&Omega;/&deg;C</div>
+            
         </div>
-
-        <div class="btn btn-outline-primary btn-sm">
-          <label for="customRange3" class="form-label">Resistance (Rf) : </label>
-          <input type="range" class="form-range" min="0" max="1000" value="500" id="customRange3" onmousemove="res3(this.value)">
-          <div id="txt1-3">500 &#8486</div>
+        <div class="d-flex justify-content-evenly">
+          <div class="btn btn-outline-primary btn-sm">
+            <label for="customRange3" class="form-label">Temperature (T) : </label>
+            <input type="range" class="form-range" min="0" max="100" value="50"  id="customRange3" onmousemove="temptores(this.value)">
+            <div id="txt1">50&deg;C</div>
+          </div>
         </div>
 
         <div class="center mt-4 d-flex justify-content-evenly">
@@ -205,10 +255,12 @@
         </div>
 
         <div class="d-flex flex-column">
-          <div class="inp1 my-2" id="txt3">Input Voltage (V<sub>1</sub>) : 1 V, Input Voltage (V<sub>2</sub>) : 2 V </div>
+          
           <div class="inp2 my-2" id="txt4">Output Voltage (V<sub>out</sub>) : <span id="ans" style="font-weight:bold"></span> </div>
-          <div class="ckt-type my-2" id="txt5">Type of the Circuit : <span id="type" style="font-weight:bold"></span> </div>  
+          
         </div>
+
+
 
       </div>
       
@@ -234,47 +286,42 @@
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">V1</th>
-              <th scope="col">V2</th>
-              <th scope="col">Vout</th>
-              <th scope="col">Type of Circuit</th>
+              <th scope="col">Temperature (T)</th>
+              <th scope="col">Resistance (&Delta;R)</th>
+              <th scope="col">Output Voltage (Vout)</th>
+
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>1V</td>
-              <td>2V</td>
+              <td><span id="temp1"></span></td>
+              <td><span id="dr1"></span></td>
               <td><span id="vout1"></span></td>
-              <td><span id="type1"></span></td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>1V</td>
-              <td>2V</td>
+              <td><span id="temp2"></span></td>
+              <td><span id="dr2"></span></td>
               <td><span id="vout2"></span></td>
-              <td><span id="type2"></span></td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>1V</td>
-              <td>2V</td>
+              <td><span id="temp3"></span></td>
+              <td><span id="dr3"></span></td>
               <td><span id="vout3"></span></td>
-              <td><span id="type3"></span></td>
             </tr>
             <tr>
               <th scope="row">4</th>
-              <td>1V</td>
-              <td>2V</td>
+              <td><span id="temp4"></span></td>
+              <td><span id="dr4"></span></td>
               <td><span id="vout4"></span></td>
-              <td><span id="type4"></span></td>
             </tr>
             <tr>
               <th scope="row">5</th>
-              <td>1V</td>
-              <td>2V</td>
+              <td><span id="temp5"></span></td>
+              <td><span id="dr5"></span></td>
               <td><span id="vout5"></span></td>
-              <td><span id="type5"></span></td>
             </tr>
           </tbody>
         </table>
