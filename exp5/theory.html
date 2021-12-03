@@ -108,7 +108,9 @@
         <a class="btn btn-lg btn-outline-dark"><strong> Aim </strong></a>
       </p>
       <p>
-        <h5>To measure the effect of change in resistance for bridge balance and unbalanced conditions.
+        <h5>
+          1) To measure the effect of change in resistance for bridge balance and unbalanced conditions.<br>
+          2) To convert temperature into electrical voltage.
         </h5>
       </p>
     </div>
@@ -121,10 +123,21 @@
       </div>
 
       <p>
-        Operational amplifiers (op-amp) are linear devices that have all the properties required for nearly ideal DC amplification and are therefore used extensively in signal conditioning or filtering or to perform mathematical operations such as adding, subtracting, integration, and differentiation.
-            An Inverting op-amp is one in which the configuration allows for the production of a signal that is complementary to the input, as the output is exactly the opposite of the input signal.            
-            A Summing op-amp gives the sum of all inputs by adding different resistors in parallel on the inverting input pin of the inverting operation amplifier circuit.
-            An Integrator op-amp uses the values of the capacitor and resister and gives the output of the voltage. The amplifier is then like a normal open-loop amplifier that has very high open-loop gain, and the amplifier is saturated. Thanks to a resistor in parallel of the capacitor, the circuit behaves like an inverting amplifier with a low frequency, and saturation is avoided.
+        An instrumentation amplifier (sometimes shorthanded as in-amp or InAmp) is a type of differential amplifier that has been outfitted with input buffer amplifiers, which eliminate the need for input impedance matching and thus make the amplifier particularly suitable for use in measurement and test equipment. Additional characteristics include very low DC offset, low drift, low noise, very high open-loop gain, very high common-mode rejection ratio, and very high input impedances. Instrumentation amplifiers are used where great accuracy and stability of the circuit both short- and long-term are required.
+        Although the instrumentation amplifier is usually shown schematically identical to a standard operational amplifier (op-amp), the electronic instrumentation amplifier is almost always internally composed of 3 op-amps. These are arranged so that there is one op-amp to buffer each input (+, −), and one to produce the desired output with adequate impedance matching for the function.
+        The most commonly used instrumentation amplifier circuit is shown in the figure: <br>
+<hr>
+        <div class="center">
+          <img src="../Images/instrumentation_amp.png" alt="Instrumentation Amplifier Image">
+            
+        </div>
+        <div style="text-align: center;">
+          <i>Figure: Instrumentation Amplifier</i>
+        </div>
+<hr>
+        The gain of the circuit is: <br> 
+        A<sub>v</sub> = V<sub>out</sub> / V<sub>2</sub> - V<sub>1</sub> = (1 + 2R<sub>1</sub>/R<sub>gain</sub>)(R<sub>3</sub>/R<sub>2</sub>) <br><br>
+        The rightmost amplifier, along with the resistors labelled R2 and R3 is just the standard differential-amplifier circuit, with gain = R3/R2 and differential input resistance = 2·R2. The two amplifiers on the left are the buffers. With Rgain removed (open-circuited), they are simple unity-gain buffers; the circuit will work in that state, with gain simply equal to R3/R2 and high input impedance because of the buffers. The buffer gain could be increased by putting resistors between the buffer inverting inputs and ground to shunt away some of the negative feedback; however, the single resistor Rgain between the two inverting inputs is a much more elegant method: it increases the differential-mode gain of the buffer pair while leaving the common-mode gain equal to 1. This increases the common-mode rejection ratio (CMRR) of the circuit and also enables the buffers to handle much larger common-mode signals without clipping than would be the case if they were separate and had the same gain. Another benefit of the method is that it boosts the gain using a single resistor rather than a pair, thus avoiding a resistor-matching problem and very conveniently allowing the gain of the circuit to be changed by changing the value of a single resistor. A set of switch-selectable resistors or even a potentiometer can be used for Rgain, providing easy changes to the gain of the circuit, without the complexity of having to switch matched pairs of resistors.
       </p>
 
     </div>

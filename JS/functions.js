@@ -21,6 +21,10 @@ function toggle_popup_observation() {
     }
 }
 
+// function chngimg(){
+
+// }
+
 function done() {
 
     alert("RIGHT CONNECTION");
