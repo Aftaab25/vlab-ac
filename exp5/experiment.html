@@ -229,15 +229,15 @@
         </div>
         <div class="d-flex flex-column my-2">
           <div class="inp1 my-2" id="txt1">R<sub>1</sub> = 1 k&Omega;, R<sub>F</sub> : 4.7k&Omega;, R<sub>A</sub> = R<sub>B</sub> = R<sub>C</sub> = 100k&Omega;, R<sub>T</sub> = 100k&Omega; at 25&deg;C</div>
-          <div class="inp1 my-2" id="txt2">V<sub>1</sub> = +5V, Op-amp supply Voltages = +15/-15V</div>
+          <div class="inp1 my-2" id="txt2">V<sub>dc</sub> = +5V, Op-amp supply Voltages = +15/-15V</div>
           <div class="inp1 my-2" id="txt3">Temperature Corfficient of Resistance = -1k&Omega;/&deg;C</div>
             
         </div>
         <div class="d-flex justify-content-evenly">
           <div class="btn btn-outline-primary btn-sm">
             <label for="customRange3" class="form-label">Temperature (T) : </label>
-            <input type="range" class="form-range" min="0" max="100" value="50"  id="customRange3" onmousemove="temptores(this.value)">
-            <div id="txt1">50&deg;C</div>
+            <input type="range" class="form-range" min="0" max="100" value="25"  id="customRange3" onmousemove="temptores(this.value)">
+            <div id="txt4">25&deg;C</div>
           </div>
         </div>
 
@@ -249,14 +249,14 @@
           </p>
           <p>
             <a class="btn btn-outline-success" onclick="solve()">
-                Done
+                Add
             </a>
           </p>
         </div>
 
         <div class="d-flex flex-column">
           
-          <div class="inp2 my-2" id="txt4">Output Voltage (V<sub>out</sub>) : <span id="ans" style="font-weight:bold"></span> </div>
+          <div class="inp2 my-2" id="xyz">Output Voltage (V<sub>out</sub>) : <span id="ans" style="font-weight:bold"></span> </div>
           
         </div>
 

@@ -1,5 +1,60 @@
-function temptores(){
-    
+var vout=0;
+var vdc = 5;
+var dr=0;
+var rf = 4700;
+var r1 = 1000;
+var r = 100000;
+var temp = 25;
+var counter=0;
+
+
+function temptores(slideValue){
+    var sliderDiv = document.getElementById("txt4");
+    sliderDiv.innerHTML = slideValue + "&deg;C";
+    dr = -1*(slideValue - 25)*1000;
+    temp = slideValue;
+}
+
+function solve(){
+
+    counter += 1;
+    vout = (rf/r1)*(dr/(4*r))*vdc;
+    document.getElementById("ans").innerHTML = vout.toFixed(3) + "V";
+
+    if (counter === 1){
+        document.getElementById("temp1").innerHTML = temp + "&deg;C";
+        document.getElementById("dr1").innerHTML = (dr/1000).toFixed(1) + " k&Omega;";
+        document.getElementById("vout1").innerHTML = vout.toFixed(3) + "V";
+    }
+
+    if (counter === 2){
+        document.getElementById("temp2").innerHTML = temp + "&deg;C";
+        document.getElementById("dr2").innerHTML = (dr/1000).toFixed(1) + " k&Omega;";
+        document.getElementById("vout2").innerHTML = vout.toFixed(3) + "V";
+    }
+
+    if (counter === 3){
+        document.getElementById("temp3").innerHTML = temp + "&deg;C";
+        document.getElementById("dr3").innerHTML = (dr/1000).toFixed(1) + " k&Omega;";
+        document.getElementById("vout3").innerHTML = vout.toFixed(3) + "V";
+    }
+
+    if (counter === 4){
+        document.getElementById("temp4").innerHTML = temp + "&deg;C";
+        document.getElementById("dr4").innerHTML = (dr/1000).toFixed(1) + " k&Omega;";
+        document.getElementById("vout4").innerHTML = vout.toFixed(3) + "V";
+    }
+
+    if (counter === 5){
+        document.getElementById("temp5").innerHTML = temp + "&deg;C";
+        document.getElementById("dr5").innerHTML = (dr/1000).toFixed(1) + " k&Omega;";
+        document.getElementById("vout5").innerHTML = vout.toFixed(3) + "V";
+    }
+
+    if (counter > 5){
+        alert("Observation Table already filled!");;
+    }
+
 }
 
 function check(){
