@@ -125,3 +125,9 @@ function check(){
     alert("Connections are correct!")}
 
 }
+
+// To Reset Connections
+function deleteconnection() {
+    window.location.reload();
+    counter = 0;
+}
